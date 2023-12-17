@@ -8,17 +8,7 @@ WebTrack Pro is a powerful browser extension designed to empower users with comp
 - **Detailed History Tracking:** Keep a precise record of websites visited, timestamps, and frequency of visits.
 - **Customizable Analytics Dashboard:** Visualize your browsing patterns through an intuitive dashboard with charts and graphs.
 - **Time Spent on Websites:** Monitor the time spent on each website to identify potential time-wasting habits.
-- **Productivity Reports:** Receive weekly reports summarizing your online activities and suggesting productivity improvements.
-- **Customizable Alerts:** Set alerts for excessive time on specific websites or categories to stay focused and efficient.
-- **Website Blocking:** Take control by blocking access to distracting websites during specific hours or based on usage limits.
-- **Privacy Protection:** Choose to exclude sensitive websites from tracking to ensure your privacy is respected.
-- **Cross-Browser Compatibility:** Seamless integration with popular web browsers for a consistent tracking experience.
 
-Start optimizing your online experience with WebTrack Pro today!
-- **Detailed History Tracking:** Keep a precise record of websites visited, timestamps, and frequency of visits.
-- **Customizable Analytics Dashboard:** Visualize your browsing patterns through an intuitive dashboard with charts and graphs.
-- **Time Spent on Websites:** Monitor the time spent on each website to identify potential time-wasting habits.
-- **Cross-Browser Compatibility:** Seamless integration with popular web browsers for a consistent tracking experience.
 
 Start optimizing your online experience with WebTrack Pro today!
 ## Development
