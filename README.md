@@ -14,12 +14,10 @@ WebTrack Pro is a powerful browser extension designed to empower users with comp
 - **Privacy Protection:** Choose to exclude sensitive websites from tracking to ensure your privacy is respected.
 - **Cross-Browser Compatibility:** Seamless integration with popular web browsers for a consistent tracking experience.
 
+Start optimizing your online experience with WebTrack Pro today!
 - **Detailed History Tracking:** Keep a precise record of websites visited, timestamps, and frequency of visits.
-
 - **Customizable Analytics Dashboard:** Visualize your browsing patterns through an intuitive dashboard with charts and graphs.
-
 - **Time Spent on Websites:** Monitor the time spent on each website to identify potential time-wasting habits.
-
 - **Cross-Browser Compatibility:** Seamless integration with popular web browsers for a consistent tracking experience.
 
 Start optimizing your online experience with WebTrack Pro today!
@@ -52,3 +50,5 @@ $ yarn build
   
 
 ![Example](https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/vOu7iPbaapkALed96rzN.png?auto=format&w=571)
+
+Do check out the Svelte Chrome Extension Template by @NekitCorp [here](https://github.com/NekitCorp/chrome-extension-svelte-typescript-boilerplate)
