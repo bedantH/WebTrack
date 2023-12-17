@@ -9,9 +9,7 @@ function render() {
 
     if (target) {
         storage.get().then(({ isTurnedOn }) => {
-          new Options({
-            target,
-          });
+          new Options();
         });
     }
 }
