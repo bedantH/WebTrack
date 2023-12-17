@@ -1,60 +1,46 @@
 <script lang="ts">
-    import { storage } from "../storage";
+  import { storage } from "../storage";
+  import "../app.css";
+  import Icon from "@iconify/svelte";
+  import Switch from "../lib/components/switch/switch.svelte";
+  import Label from "../lib/components/label/label.svelte";
+  import Schedule from "./schedule.svelte";
 
-    export let count: number;
-    let successMessage: string | null = null;
+  let isTurnedOn: boolean = false;
 
-    function increment() {
-        count += 1;
-    }
+  storage.get().then((value) => {
+    isTurnedOn = value.isTurnedOn || false;
+  });
 
-    function decrement() {
-        count -= 1;
-    }
-
-    function save() {
-        storage.set({ count }).then(() => {
-            successMessage = "Options saved!";
-
-            setTimeout(() => {
-                successMessage = null;
-            }, 1500);
-        });
-    }
+  $: storage.set({ isTurnedOn });
 </script>
 
 <div class="container">
-    <p>Current count: <b>{count}</b></p>
-    <div>
-        <button on:click={decrement}>-</button>
-        <button on:click={increment}>+</button>
-        <button on:click={save}>Save</button>
-        {#if successMessage}<span class="success">{successMessage}</span>{/if}
+  <div class="flex px-3 pt-9 justify-center items-center">
+    <div class="flex flex-col justify-center items-center gap-[5px]">
+      <Icon icon="material-symbols:history" class="text-black text-3xl" />
+      <h1 class="font-extrabold text-black text-lg">Storesis</h1>
     </div>
+  </div>
+  <p class="text-black mt-3 text-center">
+    Storesis helps you track and control how you browse through the web, and improve your productivity.
+  </p>
+  <div class="mt-20 bg-[#3d3d3d] py-4 px-3 rounded-md">
+    <div class="flex flex-col justify-center items-center gap-3">
+      <Label for="extension-value" class="text-white">Turn {isTurnedOn ? "Off" : "On"}</Label>
+      <Switch id="extension-value" bind:checked={isTurnedOn} />
+    </div>
+    <p class="text-white text-[10px] mt-4 text-center">
+      By turning off the extension, we won't be able to track your browsing history.
+    </p>
+  </div>
+  <Schedule />
 </div>
 
 <style>
-    .container {
-        min-width: 250px;
-    }
-
-    button {
-        border-radius: 2px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-        background-color: #2ecc71;
-        color: #ecf0f1;
-        transition: background-color 0.3s;
-        padding: 5px 10px;
-        border: none;
-    }
-
-    button:hover,
-    button:focus {
-        background-color: #27ae60;
-    }
-
-    .success {
-        color: #2ecc71;
-        font-weight: bold;
-    }
+  .container {
+    min-width: 300px;
+    min-height: 480px;
+    background: white;
+  }
 </style>

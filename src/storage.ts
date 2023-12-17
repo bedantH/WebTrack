@@ -1,9 +1,9 @@
 type IStorage = {
-    count: number;
+  isTurnedOn?: boolean;
 };
 
 const defaultStorage: IStorage = {
-    count: 0,
+  isTurnedOn: false,
 };
 
 export const storage = {

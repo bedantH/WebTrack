@@ -8,11 +8,10 @@ function render() {
     const target = document.getElementById("app");
 
     if (target) {
-        storage.get().then(({ count }) => {
-            new Options({
-                target,
-                props: { count },
-            });
+        storage.get().then(({ isTurnedOn }) => {
+          new Options({
+            target,
+          });
         });
     }
 }
