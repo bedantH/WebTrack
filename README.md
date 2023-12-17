@@ -1,35 +1,36 @@
-# Svelte Typescript Chrome Extension Boilerplate
+# WebTrack Pro
 
-> Boilerplate for Chrome Extension Svelte Typescript project
+## Description
+WebTrack Pro is a powerful browser extension designed to empower users with comprehensive insights into their web browsing habits. This extension not only tracks your web history but also provides robust analytical tools to help you understand and control your online behavior. Take charge of your digital life with WebTrack Pro and make informed decisions about your internet usage.
 
 ## Features
+- **Detailed History Tracking:** Keep a precise record of websites visited, timestamps, and frequency of visits.
+- **Customizable Analytics Dashboard:** Visualize your browsing patterns through an intuitive dashboard with charts and graphs.
+- **Time Spent on Websites:** Monitor the time spent on each website to identify potential time-wasting habits.
+- **Productivity Reports:** Receive weekly reports summarizing your online activities and suggesting productivity improvements.
+- **Customizable Alerts:** Set alerts for excessive time on specific websites or categories to stay focused and efficient.
+- **Website Blocking:** Take control by blocking access to distracting websites during specific hours or based on usage limits.
+- **Privacy Protection:** Choose to exclude sensitive websites from tracking to ensure your privacy is respected.
+- **Cross-Browser Compatibility:** Seamless integration with popular web browsers for a consistent tracking experience.
 
--   [Svelte](https://svelte.dev/)
--   [TypeScript](https://www.typescriptlang.org/)
--   [Vite](https://vitejs.dev/)
--   [CRXJS Vite Plugin](https://github.com/crxjs/chrome-extension-tools/blob/main/packages/vite-plugin/README.md)
--   [Chrome Extensions Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/)
-
-## Examples of integrations
-
--   [Tailwind CSS](https://tailwindcss.com/) – is in the [tailwindcss](https://github.com/NekitCorp/chrome-extension-svelte-typescript-boilerplate/tree/tailwindcss) branch
+Start optimizing your online experience with WebTrack Pro today!
 
 ## Development
 
 ```bash
 # install dependencies
-npm i
+yarn i
 
 # build files to `/dist` directory
 # HMR for extension pages and content scripts
-npm run dev
+yarn dev
 ```
 
 ## Build
 
 ```bash
 # build files to `/dist` directory
-$ npm run build
+$ yarn build
 ```
 
 ## Load unpacked extensions
