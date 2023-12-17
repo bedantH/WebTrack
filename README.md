@@ -64,3 +64,5 @@ $ yarn build
   
 
 ![Example](https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/vOu7iPbaapkALed96rzN.png?auto=format&w=571)
+
+Do check out the Svelte Chrome Extension Template by @NekitCorp [here](https://github.com/NekitCorp/chrome-extension-svelte-typescript-boilerplate)
