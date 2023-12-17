@@ -1,0 +1,13 @@
+diff --git a/node_modules/@crxjs/vite-plugin/dist/index.mjs b/node_modules/@crxjs/vite-plugin/dist/index.mjs
+index 40a584c..2b469c4 100644
+--- a/node_modules/@crxjs/vite-plugin/dist/index.mjs
++++ b/node_modules/@crxjs/vite-plugin/dist/index.mjs
+@@ -98,7 +98,7 @@ function encodeManifest(manifest) {
+   return `export default ${json}`;
+ }
+ function parseJsonAsset(bundle, key) {
+-  const asset = bundle[key];
++  const asset = bundle[key] || bundle[`.vite/${key}`];
+   if (typeof asset === "undefined")
+     throw new TypeError(`OutputBundle["${key}"] is undefined.`);
+   if (asset.type !== "asset")
