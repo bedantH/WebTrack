@@ -1,9 +1,9 @@
 type IStorage = {
-  isTurnedOn?: boolean;
+  page: string;
 };
 
 const defaultStorage: IStorage = {
-  isTurnedOn: false,
+  page: "onboard-1",
 };
 
 export const storage = {

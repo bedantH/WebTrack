@@ -8,8 +8,10 @@ function render() {
     const target = document.getElementById("app");
 
     if (target) {
-        storage.get().then(({ isTurnedOn }) => {
-          new Options();
+        storage.get().then(({ page }) => {
+          new Options({
+            target,
+          });
         });
     }
 }
